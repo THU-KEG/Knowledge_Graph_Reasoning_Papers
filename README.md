@@ -3,35 +3,35 @@
 ## (h, r, ?)
 Predict the missing tail entity and corresponding supporting paths in one triple.
 
+1. **DeepPath: A Reinforcement Learning Method for Knowledge Graph Reasoning.** *Wenhan Xiong, Thien Hoang, William Yang Wang.* EMNLP  2017. [paper](https://www.aclweb.org/anthology/D17-1060) [code](https://github.com/xwhan/DeepPath)
+    > They describe a novel reinforcement learning framework for learning multi-hop relational paths: we use a policy-based agent with continuous states based on knowledge graph embeddings, which reasons in a KG vector-space by sampling the most promising relation to extend its path.
+
+1. **Differentiable Learning of Logical Rules for Knowledge Base Reasoning.** *Fan Yang, Zhilin Yang, William W. Cohen.* NIPS 2017. [paper](https://papers.nips.cc/paper/6826-differentiable-learning-of-logical-rules-for-knowledge-base-reasoning.pdf) [code](https://github.com/fanyangxyz/Neural-LP)
+    > They propose a framework, Neural Logic Programming, that combines the parameter and structure learning of first-order logical rules in an end-to-end differentiable model. They design a neural controller system that learns to compose differentiable reasoning operations.
+
+1. **Go for a Walk and Arrive at the Answer: Reasoning Over Paths in Knowledge Bases using Reinforcement Learning.** *Rajarshi Das, Shehzaad Dhuliawala, Manzil Zaheer, Luke Vilnis, Ishan Durugkar, Akshay Krishnamurthy,  Alex Smola, Andrew McCallum.* ICLR 2018. [paper](https://arxiv.org/pdf/1711.05851.pdf) [code](https://github.com/shehzaadzd/MINERVA)
+    > MINERVA addresses the much more difficult and practical task of answering questions where the relation is known, but only one entity. 
+
+1. **M-Walk: Learning to Walk over Graphs using Monte Carlo Tree Search.** *Yelong Shen, Jianshu Chen, Po-Sen Huang, Yuqing Guo, Jianfeng Gao.* NIPS 2018. [paper](https://papers.nips.cc/paper/7912-m-walk-learning-to-walk-over-graphs-using-monte-carlo-tree-search.pdf) [code](https://github.com/yelongshen/GraphWalk)
+    > M-Walk learns to walk over a graph towards a desired target node for given input query and source nodes. Specifically, this paper proposes a novel neural architecture that encodes the state into a vector representation, and maps it to Q-values and a policy.
+    
 1. **Multi-Hop Knowledge Graph Reasoning with Reward Shaping.** *Xi Victoria Lin, Richard Socher, Caiming Xiong.* EMNLP 2018. [paper](https://aclweb.org/anthology/D18-1362) [code](https://github.com/salesforce/MultiHopKG)
-    > Multi-hop knowledge graph reasoning learned via policy gradient with reward shaping and action dropout.
-
-1. **GO FOR A WALK AND ARRIVE AT THE ANSWER: REASONING OVER PATHS IN KNOWLEDGE BASES USING REINFORCEMENT LEARNING.**
-
-1. **M-Walk: Learning to Walk over Graphs using Monte Carlo Tree Search.**
-
-1. **Differentiable Learning of Logical Rules for Knowledge Base Reasoning.**
-
-1. **DeepPath: A Reinforcement Learning Method for Knowledge Graph Reasoning.**
-
-
-
-
-
+    > This paper proposes two modeling advances for end-to-end RL-based knowledge graph query answering: (1) reward shaping via graph completion and (2) action dropout. 
 
 
 ## (h, ?, t)
 
-1. **Chains of Reasoning over Entities, Relations, and Text using Recurrent Neural Networks.**
+1. **Random walk inference and learning in a large scale knowledge base.** *Ni Lao, Tom Mitchell, William W. Cohen.* EMNLP 2011. [paper](https://www.cs.cmu.edu/~tom/pubs/lao-emnlp11.pdf) 
+    > This paper shows that the system can learn to infer different target relations by tuning the weights associated with random walks that follow different paths through the graph, using a version of the Path Ranking Algorithm.
+    
+1. **Compositional vector space models for knowledge base inference.** *Arvind Neelakantan, Benjamin Roth, Andrew McCallum.* ACL 2015. [paper](https://www.aclweb.org/anthology/P15-1016) 
+    > This paper presents an approach that reasons about conjunctions of multi-hop relations non-atomically, composing the implications of a path using a recurrent neural network (RNN) that takes as inputs vector embeddings of the binary relation in the path.
 
-1. **Variational Knowledge Graph Reasoning.**
-
-1. **Random walk inference and learning in a large scale knowledge base.**
-
-1. **Compositional vector space models for knowledge base inference.**
-
-
-
+1. **Chains of Reasoning over Entities, Relations, and Text using Recurrent Neural Networks.** *Rajarshi Das, Arvind Neelakantan, David Belanger, Andrew McCallum.* EACL 2017. [paper](https://www.aclweb.org/anthology/E17-1013) [code](https://rajarshd.github.io/ChainsofReasoning/)
+    > This paper proposes three significant modeling advances: (1) they learn to jointly reason about relations, entities, and entity-types; (2) they use neural attention modeling to incorporate multiple paths; (3) they learn to share strength in a single RNN that represents logical composition across all relations.
+    
+1. **Variational Knowledge Graph Reasoning.** *Wenhu Chen, Wenhan Xiong, Xifeng Yan, William Yang Wang.* NAACL 2018. [paper](https://aclweb.org/anthology/N18-1165) 
+    > This paper tackles apractical query answering task involving predicting the relation of a given entity pair. They frame this prediction problem as an inference problem in a probabilistic graphical model andaim at resolving it from a variational inference perspective.
 
 
 ## Rules Learning

@@ -20,6 +20,7 @@ Predict the missing tail entity and corresponding supporting paths in one triple
 
 
 ## (h, ?, t)
+Given head and tail entity and paths between them, predict the missing relation.
 
 1. **Random walk inference and learning in a large scale knowledge base.** *Ni Lao, Tom Mitchell, William W. Cohen.* EMNLP 2011. [paper](https://www.cs.cmu.edu/~tom/pubs/lao-emnlp11.pdf) 
     > This paper shows that the system can learn to infer different target relations by tuning the weights associated with random walks that follow different paths through the graph, using a version of the Path Ranking Algorithm.

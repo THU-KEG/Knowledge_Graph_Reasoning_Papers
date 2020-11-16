@@ -50,7 +50,7 @@ Given head and tail entity and paths between them, predict the missing relation.
 
 1. **Differentiable Learning of Logical Rules for Knowledge Base Reasoning.** *Fan Yang, Zhilin Yang, William W. Cohen.* NeurIPS 2017. [paper](https://papers.nips.cc/paper/6826-differentiable-learning-of-logical-rules-for-knowledge-base-reasoning.pdf) [code](https://github.com/fanyangxyz/Neural-LP)
 
-2. **End-to-End Differentiable Proving.** *Tim Rocktäschel, Sebastian Riedel.* NeurIPS 2017. [paper](https://arxiv.org/pdf/1705.11040.pdf) [code](https://github.com/uclnlp/ntp)
+2. **End-to-End Differentiable Proving.** *Tim Rocktäschel, Sebastian Riedel.* NeurIPS 2017. [paper](https://arxiv.org/pdf/1705.11040.pdf) [code](https://github.com/uclnlp/ntp)
 
 3. **DRUM: End-To-End Differentiable Rule Mining On Knowledge Graphs.** *Ali Sadeghian, Mohammadreza Armandpour, Patrick Ding, Daisy Zhe Wang.* NeurIPS 2019. [paper](https://papers.nips.cc/paper/2019/file/0c72cb7ee1512f800abe27823a792d03-Paper.pdf) [code](https://github.com/alisadeghian/DRUM)
 
@@ -72,7 +72,7 @@ Given head and tail entity and paths between them, predict the missing relation.
 
 1. **Embedding Logical Queries on Knowledge Graphs.** *William L. Hamilton, Payal Bajaj, Marinka Zitnik, Dan Jurafsky, Jure Leskovec.* NeurIPS 2018. [paper](http://papers.nips.cc/paper/7473-embedding-logical-queries-on-knowledge-graphs.pdf) [code](https://github.com/williamleif/graphqembed)
 
-1. **Embedding Logical Queries on Knowledge Graphs.** *Hongyu Ren, Weihua Hu, Jure Leskovec.* ICLR 2019. [paper](https://openreview.net/forum?id=BJgr4kSFDS) [code](https://github.com/hyren/query2box)
+1. **Query2box: Reasoning over Knowledge Graphs in Vector Space using Box Embeddings.** *Hongyu Ren, Weihua Hu, Jure Leskovec.* ICLR 2019. [paper](https://openreview.net/forum?id=BJgr4kSFDS) [code](https://github.com/hyren/query2box)
 
 1. **Beta Embeddings for Multi-Hop Logical Reasoning in Knowledge Graphs.** *Hongyu Ren, Jure Leskovec.* NeurIPS 2020. [paper](https://papers.nips.cc/paper/2020/file/e43739bba7cdb577e9e3e4e42447f5a5-Paper.pdf) [code](http://snap.stanford.edu/betae)
 

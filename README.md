@@ -17,7 +17,7 @@ Predict the missing tail entity and corresponding supporting paths in one triple
 
 7. **Reasoning Like Human: Hierarchical Reinforcement Learning for Knowledge Graph Reasoning.** *Guojia Wan, Shirui Pan, Chen Gong, Chuan Zhou, Gholamreza Haffari.* IJCAI 2020. [paper](https://www.ijcai.org/Proceedings/2020/0267.pdf) 
 
-8. **Learning Collaborative Agents with Rule Guidance for Knowledge Graph Reasoning.** *Deren Lei1, Gangrong Jiang, Xiaotao Gu, Kexuan Sun, Yuning Mao, Xiang Ren.* EMNLP 2020. [paper](https://www.aclweb.org/anthology/2020.emnlp-main.688.pdf) [code](https://github.com/m-hildebrandt/R2D2)
+8. **Learning Collaborative Agents with Rule Guidance for Knowledge Graph Reasoning.** *Deren Lei, Gangrong Jiang, Xiaotao Gu, Kexuan Sun, Yuning Mao, Xiang Ren.* EMNLP 2020. [paper](https://www.aclweb.org/anthology/2020.emnlp-main.688.pdf) [code](https://github.com/derenlei/KG-RuleGuider)
 
 9. **Dynamic Anticipation and Completion for Multi-Hop Reasoning over Sparse Knowledge Graph.** *Xin Lv, Xu Han, Lei Hou, Juanzi Li, Zhiyuan Liu, Wei Zhang, Yichi Zhang, Hao Kong, Suhui Wu.* EMNLP 2020. [paper](https://www.aclweb.org/anthology/2020.emnlp-main.459.pdf) [code](https://github.com/THU-KEG/DacKGR)
 

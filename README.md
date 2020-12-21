@@ -13,11 +13,13 @@ Predict the missing tail entity and corresponding supporting paths in one triple
 
 5. **DIVINE: A Generative Adversarial Imitation Learning Framework for Knowledge Graph Reasoning.** *Ruiping Li, Xiang Cheng.* EMNLP 2019. [paper](https://www.aclweb.org/anthology/D19-1266.pdf) [code](https://github.com/BUPT-Data-Intelligence-Lab/DIVINE)
 
-6. **Reasoning on Knowledge Graphs with Debate Dynamics.** *Marcel Hildebrandt, Jorge Andres Quintero Serna, Yunpu Ma, Martin Ringsquandl, Mitchell Joblin, Volker Tresp.* AAAI 2020. [paper](https://ojs.aaai.org/index.php/AAAI/article/download/6600/6454) [code](https://github.com/m-hildebrandt/R2D2)
+6. **Collaborative Policy Learning for Open Knowledge Graph Reasoning.** *Cong Fu, Tong Chen, Meng Qu, Woojeong Jin, Xiang Ren.* EMNLP 2019. [paper](https://www.aclweb.org/anthology/D19-1269.pdf) [code](https://github.com/shanzhenren/CPL)
 
-7. **Reasoning Like Human: Hierarchical Reinforcement Learning for Knowledge Graph Reasoning.** *Guojia Wan, Shirui Pan, Chen Gong, Chuan Zhou, Gholamreza Haffari.* IJCAI 2020. [paper](https://www.ijcai.org/Proceedings/2020/0267.pdf) 
+7. **Reasoning on Knowledge Graphs with Debate Dynamics.** *Marcel Hildebrandt, Jorge Andres Quintero Serna, Yunpu Ma, Martin Ringsquandl, Mitchell Joblin, Volker Tresp.* AAAI 2020. [paper](https://ojs.aaai.org/index.php/AAAI/article/download/6600/6454) [code](https://github.com/m-hildebrandt/R2D2)
 
-8. **Learning Collaborative Agents with Rule Guidance for Knowledge Graph Reasoning.** *Deren Lei, Gangrong Jiang, Xiaotao Gu, Kexuan Sun, Yuning Mao, Xiang Ren.* EMNLP 2020. [paper](https://www.aclweb.org/anthology/2020.emnlp-main.688.pdf) [code](https://github.com/derenlei/KG-RuleGuider)
+8. **Reasoning Like Human: Hierarchical Reinforcement Learning for Knowledge Graph Reasoning.** *Guojia Wan, Shirui Pan, Chen Gong, Chuan Zhou, Gholamreza Haffari.* IJCAI 2020. [paper](https://www.ijcai.org/Proceedings/2020/0267.pdf) 
+
+9. **Learning Collaborative Agents with Rule Guidance for Knowledge Graph Reasoning.** *Deren Lei, Gangrong Jiang, Xiaotao Gu, Kexuan Sun, Yuning Mao, Xiang Ren.* EMNLP 2020. [paper](https://www.aclweb.org/anthology/2020.emnlp-main.688.pdf) [code](https://github.com/derenlei/KG-RuleGuider)
 
 9. **Dynamic Anticipation and Completion for Multi-Hop Reasoning over Sparse Knowledge Graph.** *Xin Lv, Xu Han, Lei Hou, Juanzi Li, Zhiyuan Liu, Wei Zhang, Yichi Zhang, Hao Kong, Suhui Wu.* EMNLP 2020. [paper](https://www.aclweb.org/anthology/2020.emnlp-main.459.pdf) [code](https://github.com/THU-KEG/DacKGR)
 

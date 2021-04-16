@@ -1,12 +1,43 @@
 # Knowledge Graph Reasoning Papers
 
-## Multi-Hop Reasoning (h, r, ?)
+![](https://img.shields.io/github/last-commit/THU-KEG/Knowledge_Graph_Reasoning_Papers?color=blue) ![](https://img.shields.io/badge/PRs-Welcome-red) 
+
+Mainly Contributed and Maintained by [Xin Lv](https://github.com/davidlvxin) and [Jiaxin Shi](https://github.com/shijx12).
+
+Thanks for all great [contributors](#acknowledgements) on GitHub!
+
+### Contents
+
+* [1. Survey Papers](#1.-Survey-Papers)
+* [2. Multi-hop Reasoning](#2.-Multi-Hop-Reasoning)
+  * [2.1 Entity Prediction](#2.1-Entity-Prediction-(h,-r,-?))
+  * [2.2 Relation Prediction](#2.2-Relation-Prediction-(h,-?,-t))
+  * [2.3 Inductive Reasoning](#23-Inductive-Reasoning) 
+* [3. Reasoning with Logic Rule](#3.-Reasoning-with-Logic-Rule)
+  * [3.1 Rule Mining/Learning](#3.1-Rule-Mining/Learning)
+  * [3.2 Rule-based Reasoning](#3.2-Rule-based-Reasoning)
+  * [3.3 Rule-enhanced Knowledge Graph Embedding](#3.3-Rule-enhanced-Knowledge-Graph-Embedding)
+* [4. Query-based Reasoning](#4.-Query-based-Reasoning)
+  * [4.1 Path-based Query](#4.1-Path-based-Query)
+  * [4.2 Complex Logic Query](#4.2-Complex-Logic-Query)
+  * [4.3 Complex Natural Language Query](#4.3-Complex-Natural-Language-Query)
+* [5. Benchmark and Evaluation](#5.-Benchmark-and-Evaluation)
+* [Acknowledgements](#acknowledgements)
+
+## 1. Survey Papers
+
+1. **A Review: Knowledge Reasoning over Knowledge Graph.** *Xiaojun Chen, Shengbin Jia, Yang Xiang.* Expert Systems with Applications. [paper](https://www.sciencedirect.com/science/article/pii/S0957417419306669)
+
+## 2. Multi-Hop Reasoning
+
+### 2.1 Entity Prediction (h, r, ?)
+
 Predict the missing tail entity and corresponding supporting paths in one triple.
 
 1. **Go for a Walk and Arrive at the Answer: Reasoning Over Paths in Knowledge Bases using Reinforcement Learning.** *Rajarshi Das, Shehzaad Dhuliawala, Manzil Zaheer, Luke Vilnis, Ishan Durugkar, Akshay Krishnamurthy,  Alex Smola, Andrew McCallum.* ICLR 2018. [paper](https://arxiv.org/pdf/1711.05851.pdf) [code](https://github.com/shehzaadzd/MINERVA)
 
 2. **M-Walk: Learning to Walk over Graphs using Monte Carlo Tree Search.** *Yelong Shen, Jianshu Chen, Po-Sen Huang, Yuqing Guo, Jianfeng Gao.* NeurIPS 2018. [paper](https://papers.nips.cc/paper/7912-m-walk-learning-to-walk-over-graphs-using-monte-carlo-tree-search.pdf) [code](https://github.com/yelongshen/GraphWalk)
-    
+
 3. **Multi-Hop Knowledge Graph Reasoning with Reward Shaping.** *Xi Victoria Lin, Richard Socher, Caiming Xiong.* EMNLP 2018. [paper](https://aclweb.org/anthology/D18-1362) [code](https://github.com/salesforce/MultiHopKG)
 
 4. **Adapting Meta Knowledge Graph Information for Multi-Hop Reasoning over Few-Shot Relations.** *Xin Lv, Yuxian Gu, Xu Han, Lei Hou, Juanzi Li, Zhiyuan Liu.* EMNLP 2019. [paper](https://www.aclweb.org/anthology/D19-1334.pdf) [code](https://github.com/THU-KEG/MetaKGR)
@@ -17,28 +48,39 @@ Predict the missing tail entity and corresponding supporting paths in one triple
 
 7. **Reasoning on Knowledge Graphs with Debate Dynamics.** *Marcel Hildebrandt, Jorge Andres Quintero Serna, Yunpu Ma, Martin Ringsquandl, Mitchell Joblin, Volker Tresp.* AAAI 2020. [paper](https://ojs.aaai.org/index.php/AAAI/article/download/6600/6454) [code](https://github.com/m-hildebrandt/R2D2)
 
-8. **Reasoning Like Human: Hierarchical Reinforcement Learning for Knowledge Graph Reasoning.** *Guojia Wan, Shirui Pan, Chen Gong, Chuan Zhou, Gholamreza Haffari.* IJCAI 2020. [paper](https://www.ijcai.org/Proceedings/2020/0267.pdf) 
+8. **Reasoning Like Human: Hierarchical Reinforcement Learning for Knowledge Graph Reasoning.** *Guojia Wan, Shirui Pan, Chen Gong, Chuan Zhou, Gholamreza Haffari.* IJCAI 2020. [paper](https://www.ijcai.org/Proceedings/2020/0267.pdf)
 
 9. **Learning Collaborative Agents with Rule Guidance for Knowledge Graph Reasoning.** *Deren Lei, Gangrong Jiang, Xiaotao Gu, Kexuan Sun, Yuning Mao, Xiang Ren.* EMNLP 2020. [paper](https://www.aclweb.org/anthology/2020.emnlp-main.688.pdf) [code](https://github.com/derenlei/KG-RuleGuider)
 
-9. **Dynamic Anticipation and Completion for Multi-Hop Reasoning over Sparse Knowledge Graph.** *Xin Lv, Xu Han, Lei Hou, Juanzi Li, Zhiyuan Liu, Wei Zhang, Yichi Zhang, Hao Kong, Suhui Wu.* EMNLP 2020. [paper](https://www.aclweb.org/anthology/2020.emnlp-main.459.pdf) [code](https://github.com/THU-KEG/DacKGR)
+10. **Dynamic Anticipation and Completion for Multi-Hop Reasoning over Sparse Knowledge Graph.** *Xin Lv, Xu Han, Lei Hou, Juanzi Li, Zhiyuan Liu, Wei Zhang, Yichi Zhang, Hao Kong, Suhui Wu.* EMNLP 2020. [paper](https://www.aclweb.org/anthology/2020.emnlp-main.459.pdf) [code](https://github.com/THU-KEG/DacKGR)
 
-## Multi-Hop Reasoning (h, ?, t)
+11. **GaussianPath:A Bayesian Multi-Hop Reasoning Framework for Knowledge Graph Reasoning.** *Guojia Wan, Bo Du.* AAAI 2021. [paper](https://www.aaai.org/AAAI21Papers/AAAI-5131.WanG.pdf) [code](https://github.com/BromothymolBlue/Gaupa)
+
+### 2.2 Relation Prediction (h, ?, t)
+
 Given head and tail entity and paths between them, predict the missing relation.
 
-1. **Random walk inference and learning in a large scale knowledge base.** *Ni Lao, Tom Mitchell, William W. Cohen.* EMNLP 2011. [paper](https://www.cs.cmu.edu/~tom/pubs/lao-emnlp11.pdf) 
-    
-2. **Compositional vector space models for knowledge base inference.** *Arvind Neelakantan, Benjamin Roth, Andrew McCallum.* ACL 2015. [paper](https://www.aclweb.org/anthology/P15-1016) 
+1. **Random walk inference and learning in a large scale knowledge base.** *Ni Lao, Tom Mitchell, William W. Cohen.* EMNLP 2011. [paper](https://www.cs.cmu.edu/~tom/pubs/lao-emnlp11.pdf)
 
-3. **Chains of Reasoning over Entities, Relations, and Text using Recurrent Neural Networks.** *Rajarshi Das, Arvind Neelakantan, David Belanger, Andrew McCallum.* EACL 2017. [paper](https://www.aclweb.org/anthology/E17-1013) [code](https://rajarshd.github.io/ChainsofReasoning/)
+2. **Compositional vector space models for knowledge base inference.** *Arvind Neelakantan, Benjamin Roth, Andrew McCallum.* ACL 2015. [paper](https://www.aclweb.org/anthology/P15-1016)
+
+3. **Chains of Reasoning over Entities, Relations, and Text using Recurrent Neural Networks.** *Rajarshi Das, Arvind Neelakantan, David Belanger, Andrew McCallum.* EACL 2017. [paper](https://www.aclweb.org/anthology/E17-1013)
 
 4. **DeepPath: A Reinforcement Learning Method for Knowledge Graph Reasoning.** *Wenhan Xiong, Thien Hoang, William Yang Wang.* EMNLP  2017. [paper](https://www.aclweb.org/anthology/D17-1060) [code](https://github.com/xwhan/DeepPath)
-    
-5. **Variational Knowledge Graph Reasoning.** *Wenhu Chen, Wenhan Xiong, Xifeng Yan, William Yang Wang.* NAACL 2018. [paper](https://aclweb.org/anthology/N18-1165) 
 
-5. **Incorporating Graph Attention Mechanism into Knowledge Graph Reasoning Based on Deep Reinforcement Learning.** *Heng Wang, Shuangyin Li, Rong Pan, Mingzhi Mao.* EMNLP 2019. [paper](https://www.aclweb.org/anthology/D19-1264/) [code](https://github.com/jimmywangheng/AttnPath)
+5. **Variational Knowledge Graph Reasoning.** *Wenhu Chen, Wenhan Xiong, Xifeng Yan, William Yang Wang.* NAACL 2018. [paper](https://aclweb.org/anthology/N18-1165)
 
-## Rule Mining/Learning
+6. **Incorporating Graph Attention Mechanism into Knowledge Graph Reasoning Based on Deep Reinforcement Learning.** *Heng Wang, Shuangyin Li, Rong Pan, Mingzhi Mao.* EMNLP 2019. [paper](https://www.aclweb.org/anthology/D19-1264/) [code](https://github.com/jimmywangheng/AttnPath)
+
+### 2.3 Inductive Reasoning
+
+1. **Inductive Relation Prediction by Subgraph Reasoning.** *Komal K. Teru, Etienne Denis, William L. Hamilton.* ICML 2020. [paper](https://arxiv.org/pdf/1911.06962.pdf) [code](https://github.com/kkteru/grail)
+
+2. **Inductive Relation Prediction by BERT.** *Hanwen Zha, Zhiyu Chen, Xifeng Yan.* Arxiv 2021. [paper](https://arxiv.org/pdf/2103.07102.pdf) [code](https://github.com/zhw12/BERTRL)
+
+## 3. Reasoning with Logic Rule
+
+### 3.1 Rule Mining/Learning
 
 1. **Fast rule mining in ontological knowledge bases with AMIE+.** *Luis Galárraga, Christina Teflioudi, Katja Hose, Fabian M. Suchanek.* VLDB Journal 2015. [paper](https://link.springer.com/article/10.1007/s00778-015-0394-1) [code](https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/yago-naga/amie)
 
@@ -48,7 +90,7 @@ Given head and tail entity and paths between them, predict the missing relation.
 
 4. **Anytime Bottom-Up Rule Learning for Knowledge Graph Completion.** *Christian Meilicke, Melisachew Wudage Chekol, Daniel Ruffinelli, Heiner Stuckenschmidt.* IJCAI 2019. [paper](https://www.ijcai.org/Proceedings/2019/0435.pdf) [code](http://web.informatik.uni-mannheim.de/AnyBURL/)
 
-## Rule-based Reasoning
+### 3.2 Rule-based Reasoning
 
 1. **Differentiable Learning of Logical Rules for Knowledge Base Reasoning.** *Fan Yang, Zhilin Yang, William W. Cohen.* NeurIPS 2017. [paper](https://papers.nips.cc/paper/6826-differentiable-learning-of-logical-rules-for-knowledge-base-reasoning.pdf) [code](https://github.com/fanyangxyz/Neural-LP)
 
@@ -56,12 +98,11 @@ Given head and tail entity and paths between them, predict the missing relation.
 
 3. **DRUM: End-To-End Differentiable Rule Mining On Knowledge Graphs.** *Ali Sadeghian, Mohammadreza Armandpour, Patrick Ding, Daisy Zhe Wang.* NeurIPS 2019. [paper](https://papers.nips.cc/paper/2019/file/0c72cb7ee1512f800abe27823a792d03-Paper.pdf) [code](https://github.com/alisadeghian/DRUM)
 
-4. **RNNLogic: Learning Logic Rules for Reasoning on Knowledge Graphs.** *Meng Qu, Junkun Chen, Louis-Pascal Xhonneux, Yoshua Bengio, Jian Tang.* Arxiv 2020. [paper](https://openreview.net/pdf?id=tGZu6DlbreV) 
+4. **RNNLogic: Learning Logic Rules for Reasoning on Knowledge Graphs.** *Meng Qu, Junkun Chen, Louis-Pascal Xhonneux, Yoshua Bengio, Jian Tang.* Arxiv 2020. [paper](https://openreview.net/pdf?id=tGZu6DlbreV)
 
-4. **Learning Reasoning Strategies in End-to-End Differentiable Proving.** *Pasquale Minervini, Sebastian Riedel, Pontus Stenetorp, Edward Grefenstette, Tim Rocktäschel.* ICML 2020. [paper](https://proceedings.icml.cc/static/paper_files/icml/2020/3569-Paper.pdf) [code](https://github.com/uclnlp/ctp)
+5. **Learning Reasoning Strategies in End-to-End Differentiable Proving.** *Pasquale Minervini, Sebastian Riedel, Pontus Stenetorp, Edward Grefenstette, Tim Rocktäschel.* ICML 2020. [paper](https://proceedings.icml.cc/static/paper_files/icml/2020/3569-Paper.pdf) [code](https://github.com/uclnlp/ctp)
 
-
-## Rule-enhanced Knowledge Graph Embedding
+### 3.3 Rule-enhanced Knowledge Graph Embedding
 
 1. **RUGE: Knowledge Graph Embedding with Iterative Guidance from Soft Rules.** *Shu Guo, Quan Wang, Lihong Wang, Bin Wang, Li Guo.* AAAI 2018. [paper](https://arxiv.org/pdf/1711.11231.pdf) [code](https://github.com/iieir-km/RUGE)
 
@@ -69,8 +110,15 @@ Given head and tail entity and paths between them, predict the missing relation.
 
 3. **Probabilistic Logic Neural Networks for Reasoning.** *Meng Qu, Jian Tang.* NeurIPS 2019. [paper](https://papers.nips.cc/paper/2019/file/13e5ebb0fa112fe1b31a1067962d74a7-Paper.pdf) [code](https://github.com/DeepGraphLearning/pLogicNet)
 
+## 4. Query-based Reasoning
 
-## Complex Logic Query
+### 4.1 Path-based Query
+
+1. **Traversing Knowledge Graphs in Vector Space.** *Kelvin Guu, John Miller, Percy Liang.* EMNLP 2015. [paper](https://www.aclweb.org/anthology/D15-1038.pdf) [code](https://github.com/millerjohnp/traversing_knowledge_graphs)
+
+2. **CoKE: Contextualized Knowledge Graph Embedding.** *Quan Wang, Pingping Huang, Haifeng Wang, Songtai Dai, Wenbin Jiang, Jing Liu, Yajuan Lyu, Yong Zhu, Hua Wu.* Arxiv 2019. [paper](https://arxiv.org/pdf/1911.02168.pdf) [code](https://github.com/PaddlePaddle/Research/tree/master/KG/CoKE)
+
+### 4.2 Complex Logic Query
 
 1. **Embedding Logical Queries on Knowledge Graphs.** *William L. Hamilton, Payal Bajaj, Marinka Zitnik, Dan Jurafsky, Jure Leskovec.* NeurIPS 2018. [paper](http://papers.nips.cc/paper/7473-embedding-logical-queries-on-knowledge-graphs.pdf) [code](https://github.com/williamleif/graphqembed)
 
@@ -78,8 +126,16 @@ Given head and tail entity and paths between them, predict the missing relation.
 
 1. **Beta Embeddings for Multi-Hop Logical Reasoning in Knowledge Graphs.** *Hongyu Ren, Jure Leskovec.* NeurIPS 2020. [paper](https://papers.nips.cc/paper/2020/file/e43739bba7cdb577e9e3e4e42447f5a5-Paper.pdf) [code](http://snap.stanford.edu/betae)
 
-## Complex Natural Language Query
+### 4.3 Complex Natural Language Query
 
 1. (Dataset: WikiTableQuestions) **Compositional Semantic Parsing on Semi-Structured Tables.** *Panupong Pasupat, Percy Liang.* ACL 2015. [paper](https://aclweb.org/anthology/P15-1142) [code](https://github.com/ppasupat/WikiTableQuestions)
 
 2. (Dataset: MetaQA) **Variational Reasoning for Question Answering with Knowledge Graph.** *Yuyu Zhang, Hanjun Dai, Zornitsa Kozareva, Alexander J. Smola, Le Song.* AAAI 2018. [paper](https://arxiv.org/pdf/1709.04071.pdf) [data](https://github.com/yuyuz/MetaQA)
+
+## 5. Benchmark and Evaluation
+
+1. **Is Multi-Hop Reasoning Really Explainable? Towards Benchmarking Reasoning Interpretability.** *Xin Lv, Yixin Cao, Lei Hou, Juanzi Li, Zhiyuan Liu, Yichi Zhang, Zelin Dai.* Arxiv 2021. [paper](https://arxiv.org/pdf/2104.06751.pdf) [code](https://github.com/THU-KEG/BIMR)
+
+## Acknowledgements
+
+Please contact us if we miss your names in this list, we will add you back ASAP!

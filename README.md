@@ -4,24 +4,24 @@
 
 Mainly Contributed and Maintained by [Xin Lv](https://github.com/davidlvxin) and [Jiaxin Shi](https://github.com/shijx12).
 
-Thanks for all great [contributors](#acknowledgements) on GitHub!
+Thanks for all great contributors on GitHub!
 
 ### Contents
 
-* [1. Survey Papers](#1.-Survey-Papers)
-* [2. Multi-hop Reasoning](#2.-Multi-Hop-Reasoning)
-  * [2.1 Entity Prediction](#2.1-Entity-Prediction-(h,-r,-?))
-  * [2.2 Relation Prediction](#2.2-Relation-Prediction-(h,-?,-t))
+* [1. Survey Papers](#1-Survey-Papers)
+* [2. Multi-hop Reasoning](#2-Multi-Hop-Reasoning)
+  * [2.1 Entity Prediction](#21-Entity-Prediction)
+  * [2.2 Relation Prediction](#22-Relation-Prediction)
   * [2.3 Inductive Reasoning](#23-Inductive-Reasoning) 
-* [3. Reasoning with Logic Rule](#3.-Reasoning-with-Logic-Rule)
-  * [3.1 Rule Mining/Learning](#3.1-Rule-Mining/Learning)
-  * [3.2 Rule-based Reasoning](#3.2-Rule-based-Reasoning)
-  * [3.3 Rule-enhanced Knowledge Graph Embedding](#3.3-Rule-enhanced-Knowledge-Graph-Embedding)
-* [4. Query-based Reasoning](#4.-Query-based-Reasoning)
-  * [4.1 Path-based Query](#4.1-Path-based-Query)
-  * [4.2 Complex Logic Query](#4.2-Complex-Logic-Query)
-  * [4.3 Complex Natural Language Query](#4.3-Complex-Natural-Language-Query)
-* [5. Benchmark and Evaluation](#5.-Benchmark-and-Evaluation)
+* [3. Reasoning with Logic Rule](#3-Reasoning-with-Logic-Rule)
+  * [3.1 Rule Mining/Learning](#31-Rule-MiningLearning)
+  * [3.2 Rule-based Reasoning](#32-Rule-based-Reasoning)
+  * [3.3 Rule-enhanced Knowledge Graph Embedding](#33-Rule-enhanced-Knowledge-Graph-Embedding)
+* [4. Query-based Reasoning](#4-Query-based-Reasoning)
+  * [4.1 Path-based Query](#41-Path-based-Query)
+  * [4.2 Complex Logic Query](#42-Complex-Logic-Query)
+  * [4.3 Complex Natural Language Query](#43-Complex-Natural-Language-Query)
+* [5. Benchmark and Evaluation](#5-Benchmark-and-Evaluation)
 * [Acknowledgements](#acknowledgements)
 
 ## 1. Survey Papers
@@ -30,9 +30,9 @@ Thanks for all great [contributors](#acknowledgements) on GitHub!
 
 ## 2. Multi-Hop Reasoning
 
-### 2.1 Entity Prediction (h, r, ?)
+### 2.1 Entity Prediction
 
-Predict the missing tail entity and corresponding supporting paths in one triple.
+Predict the missing tail entity and corresponding supporting paths in one triple. (h, r, ?) -> (h, r, t)
 
 1. **Go for a Walk and Arrive at the Answer: Reasoning Over Paths in Knowledge Bases using Reinforcement Learning.** *Rajarshi Das, Shehzaad Dhuliawala, Manzil Zaheer, Luke Vilnis, Ishan Durugkar, Akshay Krishnamurthy,  Alex Smola, Andrew McCallum.* ICLR 2018. [paper](https://arxiv.org/pdf/1711.05851.pdf) [code](https://github.com/shehzaadzd/MINERVA)
 
@@ -56,9 +56,9 @@ Predict the missing tail entity and corresponding supporting paths in one triple
 
 11. **GaussianPath:A Bayesian Multi-Hop Reasoning Framework for Knowledge Graph Reasoning.** *Guojia Wan, Bo Du.* AAAI 2021. [paper](https://www.aaai.org/AAAI21Papers/AAAI-5131.WanG.pdf) [code](https://github.com/BromothymolBlue/Gaupa)
 
-### 2.2 Relation Prediction (h, ?, t)
+### 2.2 Relation Prediction
 
-Given head and tail entity and paths between them, predict the missing relation.
+Given head and tail entity and paths between them, predict the missing relation. (h, ?, t) -> (h, r, t)
 
 1. **Random walk inference and learning in a large scale knowledge base.** *Ni Lao, Tom Mitchell, William W. Cohen.* EMNLP 2011. [paper](https://www.cs.cmu.edu/~tom/pubs/lao-emnlp11.pdf)
 
